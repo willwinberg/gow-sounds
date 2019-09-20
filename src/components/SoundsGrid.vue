@@ -17,29 +17,18 @@
 export default {
   name: "SoundsGrid",
   data: () => ({
-    sounds: [
-        {
-            title: 'Grub',
-            sound: 'grub.mp3'
-        },
-        {
-            title: 'Laugh',
-            sound: 'Laugh.mp3'
-        },
-        {
-            title: 'Marcus',
-            sound: 'nice.mp3'
-        },
-        {
-            title: 'Myrrah',
-            sound: 'garbage.mp3'
-        }
-    ],
+    sounds: [],
   }),
+  created: function() {
+    this.getCharacterSounds();
+  },
   methods: {
     play: function(sound) {
         let audio = new Audio(require(`@/assets/sounds/${sound}`));
         audio.play();
+    },
+    getCharacterSounds: function() {
+
     }
   }
 };
