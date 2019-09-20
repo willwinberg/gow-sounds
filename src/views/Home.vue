@@ -1,12 +1,12 @@
 <template>
-  <div><Sounds /></div>
+  <div><SoundsGrid /></div>
 </template>
 
 <script>
-  import Sounds from './components/Sounds.vue';
+  import SoundsGrid from '@/components/SoundsGrid';
 export default {
   components: {
-    Sounds
+    SoundsGrid
   }
 };
 </script>
