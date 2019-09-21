@@ -18,10 +18,10 @@ export default new Router({
       name: 'about',
       component: () => import('./views/About.vue')
     },
-  //   {
-  //     path: '/character',
-  //     name: 'character',
-  //     component: () => import('./views/Character.vue')
-  //   }
+    {
+      path: '/marcus',
+      name: 'marcus',
+      component: Home
+    }
   ]
 })
